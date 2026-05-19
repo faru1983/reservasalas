@@ -1,0 +1,28 @@
+{
+  "id": "system_settings",
+  "globalPolicies": {
+    "slotDuration": 15,
+    "minDuration": 15,
+    "maxDuration": 180,
+    "allowedHoursStart": "08:00",
+    "allowedHoursEnd": "20:00",
+    "minAdvanceDays": 0,
+    "maxAdvanceDays": 30,
+    "cancelWindowHours": 24,
+    "maxActiveBookings": 5,
+    "autoConfirm": true
+  },
+  "specialDates": [
+    {
+      "date": "2026-12-25",
+      "label": "Navidad",
+      "isBlocked": true
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Año Nuevo",
+      "isBlocked": true
+    }
+  ],
+  "updatedAt": "2026-05-18T12:00:00.000Z"
+}

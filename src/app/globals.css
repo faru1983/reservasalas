@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020617; /* Slate 950 deep dark rich background */
+  --foreground: #f8fafc; /* Slate 50 clean premium white text */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Custom Animations in Tailwind v4 format */
+  --animate-drift-slow: drift-slow 20s infinite alternate ease-in-out;
+  --animate-drift-medium: drift-medium 15s infinite alternate ease-in-out;
+  --animate-grid-pan: grid-pan 40s linear infinite;
+  --animate-shimmer: shimmer 2.5s infinite linear;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes drift-slow {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
   }
+  50% {
+    transform: translate(80px, 40px) scale(1.15) rotate(180deg);
+  }
+  100% {
+    transform: translate(-40px, -20px) scale(0.9) rotate(360deg);
+  }
+}
+
+@keyframes drift-medium {
+  0% {
+    transform: translate(0px, 0px) scale(1.1) rotate(360deg);
+  }
+  50% {
+    transform: translate(-60px, 50px) scale(0.85) rotate(180deg);
+  }
+  100% {
+    transform: translate(40px, -30px) scale(1.05) rotate(0deg);
+  }
+}
+
+@keyframes grid-pan {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 2px solid #020617;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Stunning Animated Interactive Background Grid */
+.premium-grid-overlay {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse at 50% 50%, black 60%, transparent 100%);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Glassmorphic premium backdrop with border glare */
+.premium-glass-card {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.2);
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.6),
+    0 0 40px -10px rgba(99, 102, 241, 0.05);
+}
+
+/* Smooth high-human style active indicator slider background */
+.tab-slider-active {
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }

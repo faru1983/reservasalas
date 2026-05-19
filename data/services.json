@@ -1,0 +1,38 @@
+[
+  {
+    "id": "service_1",
+    "name": "Asesoría Comercial",
+    "description": "Sesión de consultoría estratégica y desarrollo de negocios para clientes o socios.",
+    "durationBlock": 60,
+    "color": "indigo",
+    "isActive": true,
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  },
+  {
+    "id": "service_2",
+    "name": "Lluvia de Ideas",
+    "description": "Espacio abierto para la creatividad, diseño de proyectos y definición de ideas innovadoras.",
+    "durationBlock": 30,
+    "color": "emerald",
+    "isActive": true,
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  },
+  {
+    "id": "service_3",
+    "name": "Capacitación Técnica",
+    "description": "Sesiones formativas con soporte de pantallas y conectividad de red de alta velocidad.",
+    "durationBlock": 60,
+    "color": "amber",
+    "isActive": true,
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  },
+  {
+    "id": "service_4",
+    "name": "Reunión Sincronizada",
+    "description": "Reuniones rapidas de alineación, revisión de sprints y sincronizaciones de equipo.",
+    "durationBlock": 15,
+    "color": "rose",
+    "isActive": true,
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "booking_1",
+    "userId": "u_demo_1",
+    "roomId": "room_1",
+    "serviceId": "service_1",
+    "startDateTime": "2026-05-19T09:00:00.000Z",
+    "endDateTime": "2026-05-19T10:00:00.000Z",
+    "status": "confirmed",
+    "notes": "Reunión de kickoff con el cliente internacional.",
+    "createdAt": "2026-05-18T14:30:00.000Z",
+    "userEmail": "user@demo.com",
+    "userName": "Usuario Demo",
+    "roomName": "Sala de Reuniones Alfa",
+    "serviceName": "Asesoría Comercial"
+  },
+  {
+    "id": "booking_2",
+    "userId": "u_demo_1",
+    "roomId": "room_2",
+    "serviceId": "service_2",
+    "startDateTime": "2026-05-20T14:00:00.000Z",
+    "endDateTime": "2026-05-20T15:00:00.000Z",
+    "status": "confirmed",
+    "notes": "Diseño de la nueva interfaz móvil del sistema.",
+    "createdAt": "2026-05-18T15:00:00.000Z",
+    "userEmail": "user@demo.com",
+    "userName": "Usuario Demo",
+    "roomName": "Sala de Directorio Beta",
+    "serviceName": "Lluvia de Ideas"
+  }
+]

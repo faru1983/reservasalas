@@ -1,0 +1,29 @@
+[
+  {
+    "id": "room_1",
+    "name": "Sala de Reuniones Alfa",
+    "description": "Sala equipada con proyector HD, pizarra interactiva y sistema de videoconferencia. Ideal para presentaciones y reuniones medianas.",
+    "capacity": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=800&auto=format&fit=crop&q=60",
+    "isActive": true,
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  },
+  {
+    "id": "room_2",
+    "name": "Sala de Directorio Beta",
+    "description": "Entorno formal de alta gama, mesa redonda de roble, pantalla gigante de 85\" y microfonos omnidireccionales premium.",
+    "capacity": 6,
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=60",
+    "isActive": true,
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  },
+  {
+    "id": "room_3",
+    "name": "Sala Creativa Gamma",
+    "description": "Espacio dinamico con puffs, paredes de cristal para lluvia de ideas, sillones comodos y dispensador de café exclusivo.",
+    "capacity": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&auto=format&fit=crop&q=80",
+    "isActive": true,
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  }
+]

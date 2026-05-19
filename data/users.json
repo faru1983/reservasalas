@@ -1,0 +1,20 @@
+[
+  {
+    "id": "u_demo_1",
+    "name": "Usuario Demo",
+    "email": "user@demo.com",
+    "passwordHash": "bc5848f227cc161eb5f68dfe98cb13110a9c843ce69e953a88107d865583d397",
+    "role": "user",
+    "createdAt": "2026-05-18T12:00:00.000Z",
+    "phone": "+56912345678"
+  },
+  {
+    "id": "u_demo_2",
+    "name": "Administrador",
+    "email": "admin@demo.com",
+    "passwordHash": "3eb3fe66b31e3b4d10fa70b5cad49c7112294af6ae4e476a1c405155d45aa121",
+    "role": "admin",
+    "createdAt": "2026-05-18T12:00:00.000Z",
+    "phone": "+56987654321"
+  }
+]
