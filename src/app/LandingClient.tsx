@@ -273,18 +273,12 @@ export default function LandingClient({
                 </button>
               </div>
             ) : (
-              <div className="flex items-center gap-2 sm:gap-4">
+              <div className="flex items-center gap-2 sm:gap-3">
                 <Link
                   href="/login"
-                  className="text-xs sm:text-sm font-semibold text-slate-300 hover:text-white py-2 px-4 transition-colors"
+                  className="inline-flex items-center text-xs sm:text-sm font-bold text-slate-300 hover:text-white border border-slate-800 bg-slate-900/40 hover:bg-slate-800 py-2.5 px-5 rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
                 >
-                  Login
-                </Link>
-                <Link
-                  href="/login?role=admin"
-                  className="text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 py-2 px-3 border border-slate-900 bg-slate-950/40 rounded-xl hidden md:inline-flex items-center gap-1.5 hover:bg-slate-900 transition-colors"
-                >
-                  <Shield className="w-4 h-4 text-emerald-400" /> Admin
+                  Iniciar Sesión
                 </Link>
                 <Link
                   href="/register"
